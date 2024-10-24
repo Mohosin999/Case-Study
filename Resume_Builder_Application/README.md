@@ -22,9 +22,11 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 ## 🚀 Challenges Faced & Solutions
 
 **`Problem:`** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
+
 **`Solution:`** I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature in my application.
 
 **`Problem:`** I deployed the backend using Render's free tier and encountered a significant delay when trying to fetch data after a period of inactivity. It took more than a minute to fetch resume data.
+
 **`Solution:`** I asked for advice from ChatGPT. Then I got to know the cause of this problem from ChatGPT and that is render puts services in a "sleep mode" after a period of inactivity to conserve resources, which causes a delay when the service is "woken up" for the first request. This is a common behavior with free-tier.
 
 It then suggested using UptimeRobot to ping the backend regularly. By configuring it to send requests every 5 minutes, I was able to prevent the backend from sleeping, improving the response time.
