@@ -21,16 +21,16 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 
 ## 🚀 Challenges Faced & Solutions
 
-1. AI Integration Challenges
-   As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project:
+**`Problem:`** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
+**`Solution:`** I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature in my application.
 
-Problem: The integration process was complicated, and I needed to ensure the AI-generated summaries were relevant and professional.
-Solution: I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature, allowing users to generate high-quality summaries for their resumes. 2. Backend Performance Issues
-I deployed the backend using Render's free tier, and encountered a significant delay in fetching data from the backend:
+**`Problem:`** I deployed the backend using Render's free tier and encountered a significant delay when trying to fetch data after a period of inactivity. It took more than a minute to fetch resume data.
+**`Solution:`** I asked for advice from ChatGPT. Then I got to know the cause of this problem from ChatGPT and that is render puts services in a "sleep mode" after a period of inactivity to conserve resources, which causes a delay when the service is "woken up" for the first request. This is a common behavior with free-tier.
 
-Problem: After a day of deployment, fetching resume data took almost two minutes due to the backend going into sleep mode after inactivity.
-Solution: I sought advice from ChatGPT, which suggested using UptimeRobot to regularly ping the backend. By configuring it to send requests every 5 minutes, I was able to prevent the backend from sleeping, improving the response time.
-Lessons Learned 📚
+It then suggested using UptimeRobot to ping the backend regularly. By configuring it to send requests every 5 minutes, I was able to prevent the backend from sleeping, improving the response time.
+
+## 📚 Lessons Learned
+
 AI Integration Skills: I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
 
 Backend Optimization: Through the issue with Render's free tier, I learned the importance of managing backend services, especially on free-tier hosting, and how services like UptimeRobot can improve uptime and performance.
