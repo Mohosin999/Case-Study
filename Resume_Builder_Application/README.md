@@ -1,5 +1,13 @@
 # Case Study: AI-Powered Resume Builder Application
 
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Technologies & Tools Used](#technologies--tools-used)
+3. [New Features Implemented](#new-features-implemented)
+4. [Challenges Faced & Solutions](#challenges-faced--solutions)
+5. [Lessons Learned](#lessons-learned)
+
 ## 📄 Project Overview
 
 I developed an AI-Powered Resume Builder Application designed to help users create professional resumes with ease and flexibility. Users can customize their resumes by adding sections, colors, and styles. If they choose not to include certain sections, they can simply leave them empty without any issues. Integrated Google Gemini AI to generate personalized resume summaries. Users can select their own color themes for a personalized look and can download their resumes as PDFs and easily share them.
