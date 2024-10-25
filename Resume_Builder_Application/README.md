@@ -17,24 +17,23 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 
 ### AI Summary Generation
 
-- Google Gemini AI helps generate resume summaries based on user job title.
+- Integrated Google Gemini AI to generate resume summaries based on user input. Users can review and choose from AI-suggested summaries to enhance their resume.
 
 ### AI Resume Scoring
 
-- AI assigns a "Resume Score" to indicate professionalism and provides suggestions.
-- I collected all user input and created a prompt using it. When the user clicks the button, the prompt goes to the AI ​​and generates the results.
+- After creating a resume, users can use the AI Resume Scoring feature. This analyzes the entire resume and provides a "Resume Score" to indicate the level of professionalism. Additionally, the AI offers tailored suggestions for improvement. I collected all user input and generated a detailed prompt, which is sent to the AI when the user clicks the button. Based on this prompt, the AI produces scoring and suggestions.
 
 ## 🚀 Challenges Faced & Solutions
 
-### Problem 1: AI Integration Difficulties
+### Problem 1:
 
-**Context:** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
+**Problem:** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
 
 **Solution:** I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature in my application.
 
-### Problem 2: Backend Latency Due to Free Tier Hosting
+### Problem 2:
 
-**Context:** I deployed the backend using Render's free tier and encountered a significant delay when trying to fetch data after a period of inactivity. It took more than a minute to fetch resume data.
+**Problem:** I deployed the backend using Render's free tier and encountered a significant delay when trying to fetch data after a period of inactivity. It took more than a minute to fetch resume data.
 
 **Solution:** I asked for advice from ChatGPT. Then I got to know the cause of this problem from ChatGPT and that is render puts services in a "sleep mode" after a period of inactivity to conserve resources, which causes a delay when the service is "woken up" for the first request. This is a common behavior with free-tier.
 
