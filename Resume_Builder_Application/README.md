@@ -1,12 +1,12 @@
 # Case Study: AI-Powered Resume Builder Application
 
-## Table of Contents
+## 📑 Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Technologies & Tools Used](#technologies--tools-used)
-3. [New Features Implemented](#new-features-implemented)
-4. [Challenges Faced & Solutions](#challenges-faced--solutions)
-5. [Lessons Learned](#lessons-learned)
+1. [Project Overview](#-project-overview)
+2. [Technologies & Tools Used](#-technologies--tools-used)
+3. [New Features Implemented](#-new-features-implemented)
+4. [Challenges Faced & Solutions](#-challenges-faced--solutions)
+5. [Lessons Learned](#-lessons-learned)
 
 ## 📄 Project Overview
 
