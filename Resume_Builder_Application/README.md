@@ -25,7 +25,7 @@ The AI provides a "Resume Score" to indicate professionalism and offers suggesti
 
 ## 🛠 New Features Implemented
 
-#### `AI Summary Generation`
+### `AI Summary Generation`
 
 - Integrated Google Gemini AI to generate resume summaries based on user input. Users can review and choose from AI-suggested summaries to enhance their resume.
 
@@ -52,6 +52,10 @@ It then suggested using UptimeRobot to ping the backend regularly. By configurin
 
 ## 📚 Lessons Learned
 
-**`AI Integration Skills:`** I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
+### `AI Integration Skills`
 
-**`Problem-Solving with Resources:`** Throughout this project, I relied heavily on resources like ChatGPT to find solutions to complex problems. Using this tool allowed me to overcome technical challenges swiftly, improving my ability to solve problems on the fly and enhancing my productivity.
+- I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
+
+### `Problem-Solving with Resources`
+
+- Throughout this project, I relied heavily on resources like ChatGPT to find solutions to complex problems. Using this tool allowed me to overcome technical challenges swiftly, improving my ability to solve problems on the fly and enhancing my productivity.
