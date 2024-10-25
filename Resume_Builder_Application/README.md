@@ -13,7 +13,7 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 - **Text Editor:** React Quill
 - **Others:** React Web Share, PropTypes, Axios
 
-## 🎯 Features
+## 🛠 New Features Implemented
 
 ### AI Summary Generation
 
