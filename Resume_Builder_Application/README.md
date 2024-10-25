@@ -22,14 +22,13 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 ### AI Resume Scoring
 
 - After creating a resume, users can use the AI Resume Scoring feature. This analyzes the entire resume and provides a "Resume Score" to indicate the level of professionalism. Additionally, the AI offers tailored suggestions for improvement.
-
-I collected all user input and generated a detailed prompt, which is sent to the AI when the user clicks the button. Based on this prompt, the AI produces scoring and suggestions.
+- I collected all user input and generated a detailed prompt, which is sent to the AI when the user clicks the button. Based on this prompt, the AI produces scoring and suggestions.
 
 ## 🚀 Challenges Faced & Solutions
 
 ### Problem 1:
 
-**Problem:** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
+**`Problem:`** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
 
 **Solution:** I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature in my application.
 
@@ -45,4 +44,4 @@ It then suggested using UptimeRobot to ping the backend regularly. By configurin
 
 **AI Integration Skills:** I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
 
-**Problem-Solving with Resources:** Throughout this project, I relied heavily on resources like ChatGPT. This tool allowed me to overcome technical challenges quickly.
+**`Problem-Solving with Resources:`** Throughout this project, I relied heavily on resources like ChatGPT. This tool allowed me to overcome technical challenges quickly.
