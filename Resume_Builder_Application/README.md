@@ -22,10 +22,7 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 ### AI Resume Scoring
 
 - AI assigns a "Resume Score" to indicate professionalism and provides suggestions.
-
-### PDF Download and Sharing
-
-- Users can download their resumes as PDFs and easily share them using the React Web Share API.
+- I collected all user input and created a prompt using it. When the user clicks the button, the prompt goes to the AI ​​and generates the results.
 
 ## 🚀 Challenges Faced & Solutions
 
