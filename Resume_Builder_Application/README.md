@@ -21,7 +21,9 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 
 ### AI Resume Scoring
 
-- After creating a resume, users can use the AI Resume Scoring feature. This analyzes the entire resume and provides a "Resume Score" to indicate the level of professionalism. Additionally, the AI offers tailored suggestions for improvement. I collected all user input and generated a detailed prompt, which is sent to the AI when the user clicks the button. Based on this prompt, the AI produces scoring and suggestions.
+- After creating a resume, users can use the AI Resume Scoring feature. This analyzes the entire resume and provides a "Resume Score" to indicate the level of professionalism. Additionally, the AI offers tailored suggestions for improvement.
+
+I collected all user input and generated a detailed prompt, which is sent to the AI when the user clicks the button. Based on this prompt, the AI produces scoring and suggestions.
 
 ## 🚀 Challenges Faced & Solutions
 
@@ -41,10 +43,6 @@ It then suggested using UptimeRobot to ping the backend regularly. By configurin
 
 ## 📚 Lessons Learned
 
-AI Integration Skills: I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
+**AI Integration Skills:** I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
 
-Backend Optimization: Through the issue with Render's free tier, I learned the importance of managing backend services, especially on free-tier hosting, and how services like UptimeRobot can improve uptime and performance.
-
-Problem-Solving with Resources: Throughout this project, I relied heavily on resources like ChatGPT and YouTube tutorials. These tools allowed me to overcome technical challenges quickly, reinforcing the importance of leveraging online communities and resources.
-
-User-Centered Design: Creating a user-friendly experience was a key focus. Features like resume section customization and AI-powered suggestions were designed to ensure the user could maintain full control over their resume-building process.
+**Problem-Solving with Resources:** Throughout this project, I relied heavily on resources like ChatGPT. This tool allowed me to overcome technical challenges quickly.
