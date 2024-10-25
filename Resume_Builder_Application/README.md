@@ -2,7 +2,9 @@
 
 ## 📄 Project Overview
 
-I developed an AI-Powered Resume Builder Application designed to help users create professional resumes with ease and flexibility. Users can customize their resumes by adding sections, colors, and styles. If they choose not to include certain sections, they can simply leave them empty without any issues. Integrated Google Gemini AI to generate personalized resume summaries. Users can select their own color themes for a personalized look and can download their resumes as PDFs and easily share them. The AI provides a "Resume Score" to indicate professionalism and offers suggestions for improvement. To enhance performance, I implemented lazy loading, and used React hooks (useMemo, useCallback) to optimize rendering and improve responsiveness. I also focused on reusable code by developing modular components.
+I developed an AI-Powered Resume Builder Application designed to help users create professional resumes with ease and flexibility. Users can customize their resumes by adding sections, colors, and styles. If they choose not to include certain sections, they can simply leave them empty without any issues. Integrated Google Gemini AI to generate personalized resume summaries. Users can select their own color themes for a personalized look and can download their resumes as PDFs and easily share them.
+
+The AI provides a "Resume Score" to indicate professionalism and offers suggestions for improvement. To enhance performance, I implemented lazy loading, and used React hooks (useMemo, useCallback) to optimize rendering and improve responsiveness. I also focused on reusable code by developing modular components.
 
 ## 💻 Technologies & Tools Used
 
@@ -28,7 +30,7 @@ I developed an AI-Powered Resume Builder Application designed to help users crea
 
 ### Problem 1:
 
-**`Problem:`** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
+**Problem:** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
 
 **Solution:** I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature in my application.
 
@@ -44,4 +46,4 @@ It then suggested using UptimeRobot to ping the backend regularly. By configurin
 
 **AI Integration Skills:** I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
 
-**`Problem-Solving with Resources:`** Throughout this project, I relied heavily on resources like ChatGPT. This tool allowed me to overcome technical challenges quickly.
+**Problem-Solving with Resources:** Throughout this project, I relied heavily on resources like ChatGPT to find solutions to complex problems. Using this tool allowed me to overcome technical challenges swiftly, improving my ability to solve problems on the fly and enhancing my productivity.
