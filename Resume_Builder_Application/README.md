@@ -16,20 +16,20 @@ The AI provides a "Resume Score" to indicate professionalism and offers suggesti
 
 ## 💻 Technologies & Tools Used
 
-- **Frontend:** React.js, Context API, React Router DOM, Tailwind CSS, Framer Motion
-- **Backend:** Strapi
-- **AI Integration:** Google Gemini AI
-- **Authentication:** Clerk
-- **Text Editor:** React Quill
-- **Others:** React Web Share, PropTypes, Axios
+- **`Frontend:`** React.js, Context API, React Router DOM, Tailwind CSS, Framer Motion
+- **`Backend:`** Strapi
+- **`AI Integration:`** Google Gemini AI
+- **`Authentication:`** Clerk
+- **`Text Editor:`** React Quill
+- **`Others:`** React Web Share, PropTypes, Axios
 
 ## 🛠 New Features Implemented
 
-### AI Summary Generation
+### `AI Summary Generation`
 
 - Integrated Google Gemini AI to generate resume summaries based on user input. Users can review and choose from AI-suggested summaries to enhance their resume.
 
-### AI Resume Scoring
+### `AI Resume Scoring`
 
 - After creating a resume, users can use the AI Resume Scoring feature. This analyzes the entire resume and provides a "Resume Score" to indicate the level of professionalism. Additionally, the AI offers tailored suggestions for improvement.
 - I collected all user input and generated a detailed prompt, which is sent to the AI when the user clicks the button. Based on this prompt, the AI produces scoring and suggestions.
