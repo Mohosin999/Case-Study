@@ -25,7 +25,7 @@ The AI provides a "Resume Score" to indicate professionalism and offers suggesti
 
 ## 🛠 New Features Implemented
 
-### `AI Summary Generation`
+#### `AI Summary Generation`
 
 - Integrated Google Gemini AI to generate resume summaries based on user input. Users can review and choose from AI-suggested summaries to enhance their resume.
 
@@ -38,20 +38,20 @@ The AI provides a "Resume Score" to indicate professionalism and offers suggesti
 
 ### Problem 1:
 
-**Problem:** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
+**`Problem:`** As it was my first time working with AI, I faced difficulties integrating the Google Gemini AI into the project.
 
-**Solution:** I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature in my application.
+**`Solution:`** I turned to ChatGPT and YouTube tutorials for guidance. With their help, I was able to implement the AI feature in my application.
 
 ### Problem 2:
 
-**Problem:** I deployed the backend using Render's free tier and encountered a significant delay when trying to fetch data after a period of inactivity. It took more than a minute to fetch resume data.
+**`Problem:`** I deployed the backend using Render's free tier and encountered a significant delay when trying to fetch data after a period of inactivity. It took more than a minute to fetch resume data.
 
-**Solution:** I asked for advice from ChatGPT. Then I got to know the cause of this problem from ChatGPT and that is render puts services in a "sleep mode" after a period of inactivity to conserve resources, which causes a delay when the service is "woken up" for the first request. This is a common behavior with free-tier.
+**`Solution:`** I asked for advice from ChatGPT. Then I got to know the cause of this problem from ChatGPT and that is render puts services in a "sleep mode" after a period of inactivity to conserve resources, which causes a delay when the service is "woken up" for the first request. This is a common behavior with free-tier.
 
 It then suggested using UptimeRobot to ping the backend regularly. By configuring it to send requests every 5 minutes, I was able to prevent the backend from sleeping, improving the response time.
 
 ## 📚 Lessons Learned
 
-**AI Integration Skills:** I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
+**`AI Integration Skills:`** I gained hands-on experience integrating AI into a practical application. Working with Google Gemini AI taught me how to manage AI data flows, which will be valuable for future projects involving AI.
 
-**Problem-Solving with Resources:** Throughout this project, I relied heavily on resources like ChatGPT to find solutions to complex problems. Using this tool allowed me to overcome technical challenges swiftly, improving my ability to solve problems on the fly and enhancing my productivity.
+**`Problem-Solving with Resources:`** Throughout this project, I relied heavily on resources like ChatGPT to find solutions to complex problems. Using this tool allowed me to overcome technical challenges swiftly, improving my ability to solve problems on the fly and enhancing my productivity.
