@@ -1,7 +1,5 @@
 # Case Study: Clean YouTube Application
 
-# Clean YouTube Application
-
 ## 📚 Table of Contents
 
 - [Overview](#-overview)
@@ -9,7 +7,6 @@
 - [Technologies Used](#-technologies-used)
 - [Problems and Solutions](#-problems-and-solutions)
 - [Lessons Learned](#-lessons-learned)
-- [How to Run the Application](#-how-to-run-the-application)
 
 ---
 
