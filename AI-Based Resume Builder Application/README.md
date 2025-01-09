@@ -69,7 +69,7 @@ The AI-Powered Resume Builder Application is designed to help users create profe
 
 ## 🛠 Problems and Solutions
 
-### **Bullet Points in Rich Text Editor**
+### **Issue 01: Bullet Points in Rich Text Editor**
 
 **Problem:**  
 Bullet points displayed correctly in the rich text editor but did not reflect in the preview section.
@@ -79,7 +79,7 @@ The issue was resolved by adding necessary styles to the global CSS file, ensuri
 
 ---
 
-### **AI Integration Challenges**
+### **Issue 02: AI Integration Challenges**
 
 **Problem:**  
 Integrating Google Gemini AI was initially challenging due to a lack of resources and guidance.
