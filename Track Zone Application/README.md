@@ -8,7 +8,7 @@
 - [Problems and Solutions](#-problems-and-solutions)
 - [Lessons Learned](#-lessons-learned)
 
-[![Demo Video]](./asset/demo.mp4)
+[![Demo Video](./asset/thumbnail.jpg)](./asset/demo.mp4)
 
 ### 📄 Overview
 
