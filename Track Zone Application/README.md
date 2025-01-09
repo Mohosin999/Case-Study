@@ -8,8 +8,6 @@
 - [Problems and Solutions](#-problems-and-solutions)
 - [Lessons Learned](#-lessons-learned)
 
-[![Demo Video](./asset/thumbnail.jpg)](./asset/demo.mp4)
-
 ### 📄 Overview
 
 Track Zone is a React.js application designed to help users manage clocks and events efficiently. The application comes with a default local clock whose timezone can be updated. Additionally, users can create and manage multiple clocks and events, all while enjoying a streamlined user experience.
