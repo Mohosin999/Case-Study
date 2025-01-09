@@ -1,6 +1,6 @@
 # Track Zone Application
 
-### Table of Contents
+### 📚 Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -13,13 +13,13 @@
 Track Zone is a React.js application designed to help users manage clocks and events efficiently. The application comes with a default local clock whose timezone can be updated. Additionally, users can create and manage multiple clocks and events, all while enjoying a streamlined user experience.
 
 ### Features
-**`Default Local Clock:`**
+**Default Local Clock:**
   - Users can update the timezone of the default clock.
 
 **`Custom Clocks:`**
 - Create, update (timezone and offset), and delete custom clocks.
 
-**`Event Management:`**
+**Event Management:**
 - Add, update, and delete events under any clock.
 - View all created events on a single page.
 - Clear all events or search for specific events.
@@ -31,40 +31,28 @@ Track Zone is a React.js application designed to help users manage clocks and ev
 
 ### 💻 Technologies Used
 
-- React.js: Frontend framework.
-- Styled Components: For dynamic and reusable styling.
-- Date-fns: For date and time manipulation.
-- PropTypes: For type-checking React components.
-- React Router DOM: For client-side routing.
+- **React.js:** Frontend framework.
+- **Styled Components:** For dynamic and reusable styling.
+- **Date-fns:** For date and time manipulation.
+- **PropTypes:** For type-checking React components.
+- **React Router DOM:** For client-side routing.
 
-Problems and Solutions
+### Problems and Solutions
 
-Description
+**Problem**
 
-While developing the application, a critical bug surfaced when attempting to update an event. Instead of updating the existing event, the system created a new event. Debugging and resolving this issue took approximately 9 hours.
+While developing the application, an issue arose during the event update process. Instead of modifying the existing event, the system was creating a new one. This behavior was caused by a mismatch in the event identification logic. Events were created using a composite ID format (clockId|eventId), but during updates, only the eventId was being used. As a result, the system could not properly identify the event to be updated, leading it to treat the operation as a request to create a new event.
 
-Root Cause Analysis
+**Solution**
 
-The bug was traced to the event ID format. Events were created with a composite ID format of clockId|eventId. However, during the update process, only the eventId was being referenced. This mismatch in the ID format caused the application to treat the update operation as a request to create a new event.
+To address the issue, the application logic was updated to consistently use the composite ID (clockId|eventId) for both creating and updating events. By ensuring that the same format was applied throughout, the system was able to correctly identify and modify existing events without creating duplicates. Extensive testing was performed to verify the fix across different scenarios, ensuring the solution was robust and reliable.
 
-Solution
+### Lessons Learned
 
-To resolve the issue, the full composite ID (clockId|eventId) was consistently utilized for both creation and update operations. By aligning the ID format across these functionalities, the bug was effectively eliminated. The updated logic ensures that the correct event is identified and updated without creating duplicates.
+- **Consistent Data Handling:** Ensuring data consistency across operations is crucial to avoid bugs.
 
-Key Steps:
+- **Composite ID Usage:** Composite IDs can be powerful but require careful implementation to prevent mismatches.
 
-Identified the mismatch in ID handling during the update process.
+- **Debugging Strategies:** Methodical debugging and root cause analysis are key to resolving complex issues.
 
-Updated the logic to use the composite ID (clockId|eventId) for event identification.
-
-Tested the solution across various scenarios to confirm the issue was resolved.
-
-Lessons Learned
-
-Consistent Data Handling: Ensuring data consistency across operations is crucial to avoid bugs.
-
-Composite ID Usage: Composite IDs can be powerful but require careful implementation to prevent mismatches.
-
-Debugging Strategies: Methodical debugging and root cause analysis are key to resolving complex issues.
-
-Testing Importance: Comprehensive testing helps identify and fix edge cases, ensuring reliable application performance.
+- **Testing Importance:** Comprehensive testing helps identify and fix edge cases, ensuring reliable application performance.
