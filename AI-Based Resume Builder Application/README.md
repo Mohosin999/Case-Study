@@ -121,6 +121,14 @@ Now components can simply use `className="card"`.
 - Easier to maintain and update styles globally
 - Cleaner JSX, making the project more organized and maintainable
 
+### **Issue 04: Slow and Unreliable AI Resume Description Generation**
+
+**Problem:**
+The AI-powered resume description sometimes returned empty results and was slow, taking several seconds. TypeScript also reported errors because response.text is a getter property, not a function.
+
+**Solution:**
+After discussing the issue with ChatGPT, I implemented the recommended improvements: I switched from `gemini-2.5-pro` to the faster `gemini-1.5-flash`, removed unnecessary tools, and simplified the config. I also updated the code to safely access `response.text` and added a fallback for empty outputs. Testing and experimenting with SDK settings helped identify the optimal configuration. Description now generate quickly and reliably in 1–2 seconds, improving user experience.
+
 ---
 
 ## 📖 Lessons Learned
