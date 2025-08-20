@@ -25,17 +25,37 @@ I have often seen candidates, especially new job seekers, encounter formatting i
 
 ## 🛠️ Approach
 
-- Research: Studied existing resume standards (ATS-friendly, global formats)
+`Research`
 
-- Design: Created a user-friendly interface with form sections for personal, skills, experience, and summary
+- Studied existing resume standards and took professional advice from a core team member of one of the world’s largest tech companies to ensure industry relevance.
 
-- AI Integration: Used models like Gemini or GPT to generate professional summaries, optimize content, and suggest improvements
+`Design`
 
-- Tech Stack:
-  - **Frontend** - Next.js 14, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion, React Icons
-  - **Backend** - Next.js API Routes, Prisma ORM, PostgreSQL (Neon Database)
-  - **AI Integration** - Google Gemini AI
-  - **Others** - Clerk (Authentication), React Toastify
+- Built a **user-centric interface** with structured sections for dashboard, personal details, summary, experience, project, education, and skills.
+- Followed **UI/UX best practices** to ensure accessibility, responsive layouts, and intuitive navigation across devices.
+- Developed **real-time preview and print-ready modes**, enabling users to instantly view and export professional resumes.
+- Incorporated **animations and micro-interactions** (Framer Motion) to create a smooth and engaging user experience.
+- Applied **global reusable styles** with Tailwind’s `@apply` directive, ensuring consistency and reducing repetitive code.
+
+---
+
+### **AI Integration 🤖**
+
+- Integrated **Google Gemini AI** to generate professional, concise, and ATS-friendly resume summaries.
+- Key AI contributions include:
+  - Generating context-aware professional descriptions.
+  - Suggesting impactful phrasing for skills and experience.
+  - Providing multiple AI-generated suggestion cards for user selection.
+- Implemented **prompt engineering** to avoid overly generic outputs and ensured **content persistence** with local state + context.
+- Optimized AI responses by switching from `gemini-2.5-pro` to **`gemini-1.5-flash`**, reducing response time to 1–2 seconds.
+- Maintained user control by allowing **manual edits** after AI suggestions.
+
+- `Tech Stack`
+
+  - Frontend: Next.js 14, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion, React Icons
+  - Backend: Next.js API Routes, Prisma ORM, PostgreSQL (Neon Database)
+  - AI Integration: Google Gemini AI for resume optimization and content generation
+  - Authentication & Others: Clerk (user authentication), React Toastify (real-time notifications)
 
 ## 🔑 Features
 
@@ -142,11 +162,18 @@ After discussing the issue with ChatGPT, I implemented the recommended improveme
 
 ## 📖 Lessons Learned
 
-<!--
-- **Global Styles Impact:** Styles in the global CSS file play a crucial role in ensuring visual consistency across different components.
+- **Global Styles Impact:** Centralized styles in `globals.css` improved consistency and maintainability.
+- **AI Integration:** Building AI features requires patience and iteration — tuning prompts, selecting the right model, and optimizing response speed.
+- **Reusable Components:** A modular approach simplified development and improved code reusability.
+- **Performance Optimization:** Techniques like lazy loading and optimized rendering improved responsiveness and user experience.
+- **Debugging Mindset:** Encountering bugs (like typed routes in Next.js 15 and print layout issues) reinforced the importance of deep debugging and fallback strategies.
 
-- **AI Integration:** Implementing AI features can significantly enhance user experience but requires patience and thorough research.
+---
 
-- **Reusable Components:** Modular and reusable components streamline development and improve maintainability.
+### 🧪 Test Code Journey
 
-- **Performance Optimization:** Techniques like lazy loading and optimized rendering improve responsiveness and ensure a seamless user experience. -->
+- Initially, I attempted to set up a test environment twice but quit due to recurring errors.
+- Every fix seemed to trigger a new error, leading to frustration.
+- Before trying a third time, I **revised my test knowledge**, re-learned testing classes, and analyzed error patterns.
+- On my **third attempt**, I successfully configured the test environment, wrote meaningful test cases, and understood the purpose of each test.
+- This experience taught me the importance of **perseverance, structured learning, and error analysis** when working with testing frameworks.
