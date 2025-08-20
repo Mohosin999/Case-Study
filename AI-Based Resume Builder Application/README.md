@@ -1,22 +1,43 @@
-# Case Study: FullStack AI Resume Builder App - Next.js
+<!-- # Case Study: FullStack AI-Powered Resume Builder App - Next.js
 
 ## 📚 Table of Contents
 
+- [Title](#-title)
 - [Overview](#-overview)
 - [Features](#-features)
 - [Technology Stack](#-technology-stack)
 - [Problems and Solutions](#-problems-and-solutions)
 - [Lessons Learned](#-lessons-learned)
 
----
+--- -->
+
+## Title: AI-Powered Resume Builder - Enhancing Job Seekers’ Efficiency and Professionalism
 
 ## 📄 Overview
 
-I developed a full-stack AI-powered Resume Builder using Next.js with built-in server-side capabilities. It enables users to create professional resumes effortlessly with world-class formats and complete CRUD support. Integrated with Google Gemini AI, the app generates professional descriptions and intelligent skill suggestions based on the resume title. Designed to help beginners overcome formatting and layout challenges, it auto-structures resumes for a polished look. Users can instantly download their resumes as PDFs, ready for job applications.
+I developed a full-stack AI-powered Resume Builder using Next.js with built-in server-side capabilities. It enables users to create professional resumes effortlessly with professional formats and complete CRUD support. Integrated with Google Gemini AI, the app generates professional descriptions and intelligent skill suggestions based on the resume title. Designed to help users overcome formatting and layout challenges, it auto-structures resumes for a polished look. Users can instantly download their resumes as PDFs, ready for job applications.
 
 ---
 
-## ✨ Features
+## ⚠️ Problem Statement
+
+I have often seen candidates, especially new job seekers, encounter formatting issues while creating resumes and fail to create resumes that meet global professional standards. They do not understand what a resume should look like and which sections to focus on. Observing this challenge, AI Resume Builder was created to help users create resumes quickly and efficiently, eliminating the need to worry about formatting or professional presentation.
+
+## 🛠️ Approach
+
+- Research: Studied existing resume standards (ATS-friendly, global formats)
+
+- Design: Created a user-friendly interface with form sections for personal, skills, experience, and summary
+
+- AI Integration: Used models like Gemini or GPT to generate professional summaries, optimize content, and suggest improvements
+
+- Tech Stack:
+  - **Frontend** - Next.js 14, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion, React Icons
+  - **Backend** - Next.js API Routes, Prisma ORM, PostgreSQL (Neon Database)
+  - **AI Integration** - Google Gemini AI
+  - **Others** - Clerk (Authentication), React Toastify
+
+## 🔑 Features
 
 - **Customizable Resume Sections:**
 
@@ -37,23 +58,11 @@ I developed a full-stack AI-powered Resume Builder using Next.js with built-in s
 
 ---
 
-## 💻 Technology Stack
-
-**Frontend** - Next.js 14, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion, React Icons
-
-**Backend** - Next.js API Routes, Prisma ORM, PostgreSQL (Neon Database)
-
-**AI Integration** - Google Gemini AI
-
-**Others** - Clerk (Authentication), React Toastify
-
----
-
-## 🛠 Problems and Solutions
+## ⚡ Challenges & Solutions
 
 ### **Issue 01: Next.js 15 Typed Routes Bug**
 
-**Problem:**  
+**Challenge:**  
 While upgrading my full-stack AI Resume Builder to Next.js 15 (App Router), I encountered a critical TypeScript error during production builds. Despite correctly typing dynamic route params and trying all recommended fixes (typedRoutes config, generateStaticParams, async/await adjustments), the build kept failing with:
 
 ```
@@ -71,7 +80,7 @@ The root cause was Next.js 15’s experimental typed routes feature. It enforced
 
 ### **Issue 02: Mobile Print Styles Showing Instead of Desktop Styles**
 
-**Problem:**
+**Challenge:**
 After making the resume responsive for mobile, printing the resume caused it to use mobile-optimized styles (stacked layouts, centered text) instead of the cleaner desktop layout. This resulted in unprofessional print output, as desktop styles (side-by-side sections, proper alignment) are much better for printed resumes.
 
 **Solution:**
@@ -99,7 +108,7 @@ Printed layout: `flex-col` (mobile stacked layout)
 
 ### **Issue 03: Managing Reusable Styles in Tailwind CSS**
 
-**Problem:**
+**Challenge:**
 While building the app’s design, I felt exhausted from repeatedly writing the same Tailwind utility classes across multiple components. This repetition made the JSX messy and harder to maintain.
 
 **Solution:**
@@ -123,7 +132,7 @@ Now components can simply use `className="card"`.
 
 ### **Issue 04: Slow and Unreliable AI Resume Description Generation**
 
-**Problem:**
+**Challenge:**
 The AI-powered resume description sometimes returned empty results and was slow, taking several seconds. TypeScript also reported errors because response.text is a getter property, not a function.
 
 **Solution:**
