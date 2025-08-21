@@ -17,8 +17,6 @@
 
 I developed a full-stack AI-powered Resume Builder using Next.js with built-in server-side capabilities. It enables users to create professional resumes effortlessly with professional formats and complete CRUD support. Integrated with Google Gemini AI, the app generates professional descriptions and intelligent skill suggestions based on the resume title. Designed to help users overcome formatting and layout challenges, it auto-structures resumes for a polished look. Users can instantly download their resumes as PDFs, ready for job applications.
 
----
-
 ## ⚠️ Problem Statement
 
 I have often seen candidates, especially new job seekers, encounter formatting issues while creating resumes and fail to create resumes that meet global professional standards. They do not understand what a resume should look like and which sections to focus on. Observing this challenge, AI Resume Builder was created to help users create resumes quickly and efficiently, eliminating the need to worry about formatting or professional presentation.
@@ -27,35 +25,34 @@ I have often seen candidates, especially new job seekers, encounter formatting i
 
 `Research`
 
-- Studied existing resume standards and took professional advice from a core team member of one of the world’s largest tech companies to ensure industry relevance.
+- Studied existing resume standards and took advice from professionals.
+- Identified additional important sections (e.g., Achievements) but deferred implementation for future iterations.
 
 `Design`
 
-- Built a **user-centric interface** with structured sections for dashboard, personal details, summary, experience, project, education, and skills.
-- Followed **UI/UX best practices** to ensure accessibility, responsive layouts, and intuitive navigation across devices.
-- Developed **real-time preview and print-ready modes**, enabling users to instantly view and export professional resumes.
-- Incorporated **animations and micro-interactions** (Framer Motion) to create a smooth and engaging user experience.
-- Applied **global reusable styles** with Tailwind’s `@apply` directive, ensuring consistency and reducing repetitive code.
+- Built a user-centric interface with structured sections for dashboard, personal details, summary, experience, project, education, skills, and resume preview.
+- Followed UI/UX best practices to ensure accessibility, responsive layouts, and intuitive navigation across devices.
+- Developed an on-demand preview and print-ready mode — users can choose when to preview their resume instead of constant live preview, giving them more control.
+- Used Shadcn UI components for a consistent, professional design system with accessible, production-ready elements.
+- Applied global reusable styles with Tailwind’s @apply directive, ensuring consistency and reducing repetitive code.
+- Implemented reusable components across most features, making the system modular, maintainable, and scalable.
 
----
+`AI Integration`
 
-### **AI Integration 🤖**
-
-- Integrated **Google Gemini AI** to generate professional, concise, and ATS-friendly resume summaries.
+- Integrated Google Gemini AI to generate professional resume content.
 - Key AI contributions include:
-  - Generating context-aware professional descriptions.
-  - Suggesting impactful phrasing for skills and experience.
-  - Providing multiple AI-generated suggestion cards for user selection.
-- Implemented **prompt engineering** to avoid overly generic outputs and ensured **content persistence** with local state + context.
-- Optimized AI responses by switching from `gemini-2.5-pro` to **`gemini-1.5-flash`**, reducing response time to 1–2 seconds.
-- Maintained user control by allowing **manual edits** after AI suggestions.
+  - Generating concise summaries for the Summary section based on the user’s job title.
+  - Creating impactful bullet point descriptions for the Experience section based on the experience's job title.
+  - Providing professional bullet point descriptions for the Project section based on the project's name.
+  - Suggesting intelligent and context-aware skills for the Skills section.
+- Maintained user control by allowing full manual edits and customization after AI suggestions.
 
-- `Tech Stack`
+`Tech Stack`
 
-  - Frontend: Next.js 14, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion, React Icons
-  - Backend: Next.js API Routes, Prisma ORM, PostgreSQL (Neon Database)
-  - AI Integration: Google Gemini AI for resume optimization and content generation
-  - Authentication & Others: Clerk (user authentication), React Toastify (real-time notifications)
+- Frontend: Next.js 14, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion, React Icons
+- Backend: Next.js API Routes, Prisma ORM, PostgreSQL (Neon Database)
+- AI Integration: Google Gemini AI for resume optimization and content generation
+- Authentication & Others: Clerk (user authentication), React Toastify (real-time notifications)
 
 ## 🔑 Features
 
@@ -75,8 +72,6 @@ I have often seen candidates, especially new job seekers, encounter formatting i
 
 - **Download as PDF:**
   - Users can download their resume in a PDF format.
-
----
 
 ## ⚡ Challenges & Solutions
 
@@ -158,7 +153,13 @@ The AI-powered resume description sometimes returned empty results and was slow,
 **Solution:**
 After discussing the issue with ChatGPT, I implemented the recommended improvements: I switched from `gemini-2.5-pro` to the faster `gemini-1.5-flash`, removed unnecessary tools, and simplified the config. I also updated the code to safely access `response.text` and added a fallback for empty outputs. Testing and experimenting with SDK settings helped identify the optimal configuration. Description now generate quickly and reliably in 1–2 seconds, improving user experience.
 
----
+## 🧪 Test Code Journey
+
+- Initially, I attempted to set up a test environment twice but quit due to recurring errors.
+- Every fix seemed to trigger a new error, leading to frustration.
+- Before trying a third time, I **revised my test knowledge**, re-learned testing classes, and analyzed error patterns.
+- On my **third attempt**, I successfully configured the test environment, wrote meaningful test cases, and understood the purpose of each test.
+- This experience taught me the importance of **perseverance, structured learning, and error analysis** when working with testing frameworks.
 
 ## 📖 Lessons Learned
 
@@ -167,13 +168,3 @@ After discussing the issue with ChatGPT, I implemented the recommended improveme
 - **Reusable Components:** A modular approach simplified development and improved code reusability.
 - **Performance Optimization:** Techniques like lazy loading and optimized rendering improved responsiveness and user experience.
 - **Debugging Mindset:** Encountering bugs (like typed routes in Next.js 15 and print layout issues) reinforced the importance of deep debugging and fallback strategies.
-
----
-
-### 🧪 Test Code Journey
-
-- Initially, I attempted to set up a test environment twice but quit due to recurring errors.
-- Every fix seemed to trigger a new error, leading to frustration.
-- Before trying a third time, I **revised my test knowledge**, re-learned testing classes, and analyzed error patterns.
-- On my **third attempt**, I successfully configured the test environment, wrote meaningful test cases, and understood the purpose of each test.
-- This experience taught me the importance of **perseverance, structured learning, and error analysis** when working with testing frameworks.
