@@ -4,9 +4,13 @@
 
 I developed a full-stack AI-powered Resume Builder using Next.js with built-in server-side capabilities. It enables users to create professional resumes effortlessly with professional formats and complete CRUD support. Integrated with Google Gemini AI, the app generates professional descriptions and intelligent skill suggestions based on the resume title. Designed to help users overcome formatting and layout challenges, it auto-structures resumes for a polished look. Users can instantly download their resumes as PDFs, ready for job applications.
 
-## ⚠️ Problem Statement
+## ❗ Problem Statement
 
-I have often seen candidates, especially new job seekers, encounter formatting issues while creating resumes and fail to create resumes that meet global professional standards. They do not understand what a resume should look like and which sections to focus on. Observing this challenge, AI Resume Builder was created to help users create resumes quickly and efficiently, eliminating the need to worry about formatting or professional presentation.
+Many job seekers, especially newbies, struggle to create a resume that meets professional global standards. They often face challenges in formatting, prioritizing relevant sections, and presenting information clearly. As a result, the resume fails to effectively convey skills and experience.
+
+## 🎯 Objective
+
+To develop a user-friendly AI-powered resume builder that enables users to create professional, well-structured resumes efficiently, with minimal manual effort and maximum customization.
 
 ## 🛠️ Approach
 
@@ -26,15 +30,13 @@ I have often seen candidates, especially new job seekers, encounter formatting i
 
 `AI Integration`
 
-- Integrated Google Gemini AI to generate professional resume content.
-- Key AI contributions include:
-  - Generating concise summaries for the Summary section based on the user’s job title.
-  - Creating impactful bullet point descriptions for the Experience section based on the experience's job title.
-  - Providing professional bullet point descriptions for the Project section based on the project's name.
-  - Suggesting intelligent and context-aware skills for the Skills section.
-- Maintained user control by allowing full manual edits and customization after AI suggestions.
+- Integrated Google Gemini AI to generate professional content:
+  - Summaries based on job titles.
+  - Experience and project bullet points tailored to roles and projects.
+  - Intelligent skill suggestions.
+- Allowed full manual editing for user control and customization.
 
-`Tech Stack`
+## 💻 Tech Stack
 
 - Frontend: Next.js 14, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion, React Icons
 - Backend: Next.js API Routes, Prisma ORM, PostgreSQL (Neon Database)
