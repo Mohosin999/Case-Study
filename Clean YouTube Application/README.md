@@ -16,9 +16,9 @@ To develop a clean, user-friendly web application that provides an ad-free and d
 
 `Research`
 
-- Based on personal experience of being distracted by YouTube ads and overly attractive content, leading to reduced focus and productivity.
-- Studied general user behaviors and common pain points on YouTube.
-- Identified the need for a distraction-free viewing experience.
+- Based on personal experiences of decreased attention and productivity due to YouTube ads and overly engaging content, the need for a distraction-free viewing experience has been identified.
+
+- Although I could have optimized the process by fetching only a subset of videos initially and then requesting the rest, for now, I chose to fetch all videos at once. This optimization can be implemented later.
 
 `Design & UI/UX`
 
