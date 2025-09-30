@@ -112,6 +112,25 @@ Implemented local storage caching for playlist data:
 
 This optimization significantly reduced API usage, improved performance, and provided a faster, smoother user experience.
 
+### **Issue 05: YouTube Data API 403 Forbidden Error**
+
+**Challenge:**
+
+After a few months, the previously working YouTube Data API integration suddenly started failing. Even though the code and API key remained unchanged, every request to fetch playlists returned a 403 Forbidden error:
+
+- Requests to the API were being blocked.
+- Debugging was confusing since the same setup worked fine earlier.
+
+**Solution:**
+The root cause turned out to be that the **YouTube Data API v3**, which was enabled before, had somehow become disabled. Steps taken to resolve the issue:
+
+- Logged into Google Cloud Console → APIs & Services → Enabled APIs & Services.
+- Found that the YouTube Data API v3 was disabled.
+- Re-enabled the API.
+- Retested the integration — the requests started working successfully again.
+
+This fix restored the playlist search functionality and highlighted the importance of verifying API status in Google Cloud Console, even if it was previously enabled.
+
 ## 📖 Lessons Learned
 
 - **Asynchronous Handling:** Proper use of `async/await` ensures predictable and user-friendly operations.
